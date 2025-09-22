@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/all.min.css">
+    <link rel="stylesheet" href="./src/css/output.css">
+</head>
+<body class="bg-[#0D0D0D]">
+  
+
+  <aside class=" h-[100%] fixed top-0 start-0 z-20 flex">
+
+    <div id="sideLinks" class="w-[0] overflow-hidden flex flex-wrap flex-col justify-between bg-[#0D0D0D] text-white">
+      <ul class="p-5">
+        <li id="searchLink" class="my-4 cursor-pointer"><a>Search</a></li>
+        <li id="categoryLink" class="my-4 cursor-pointer"><a>Categories</a></li>
+        <li id="areaLink" class="my-4 cursor-pointer"><a>Area</a></li>
+        <li id="ingredientsLink" class="my-4 cursor-pointer"><a>Ingredients</a></li>
+        <li id="contactLink" class="my-4 cursor-pointer"><a>Contact Us</a></li>
+      </ul>
+      <div class="p-5">
+        <ul class="flex">
+          <li class="me-1 cursor-pointer"><i class="fa-brands fa-facebook"></i></li>
+          <li class="me-1 cursor-pointer"><i class="fa-brands fa-twitter"></i></li>
+          <li class="me-1 cursor-pointer"><i class="fa-solid fa-globe"></i></li>
+        </ul>
+        <p>Copyright Â© 2019 All Rights Reserved.</p>
+      </div>
+    </div>
+
+    <div class="w-[80px] p-3 bg-white text-center flex flex-wrap flex-col justify-between items-center">
+      <span><img src="images/logo.png" class="  m-auto" alt="logo"></span>
+      <span id="sideMenu" class="cursor-pointer w-[100%] text-3xl"><i class="fa-solid fa-bars"></i></span>
+      <div>
+        <span class="block cursor-pointer"><i class="fa-solid fa-globe"></i></span>
+        <span class="block cursor-pointer"><i class="fa-solid fa-share-nodes"></i></span>
+      </div>
+    </div>
+  </aside>
+
+  <section>
+    <div class="search-title container  hidden">
+      <div class="grid sm:grid-cols-1 md:grid-cols-2 mx-28 gap-4 py-5 ">
+        <input id="searchName" type="text" class="border-white border-1 rounded-md placeholder:text-gray-500 py-2 px-4 focus:outline-4 focus:outline-sky-500/20 focus:border-sky-300 text-white" placeholder="Search By Name">
+        <input id="searchLetter" type="text" class="border-white border-1 rounded-md placeholder:text-gray-500 py-2 px-4 focus:outline-4 focus:outline-sky-500/20 focus:border-sky-300 text-white" placeholder="Search By First Letter">
+      </div>
+    </div>
+    <header>
+      <div class="container my-10 w-[80%]  ps-[20%] md:ps-[10%]">
+        <div id="parentHome" class="menu grid gap-6 sm:grid-cols-1 md:grid-cols-4">
+          
+          
+        
+        </div>
+      </div>
+    </header>
+  </section>
+
+  <section class="hidden" id="category">
+    <div class="container my-10 w-[80%]  ps-[20%] md:ps-[10%]">
+        <div id="catDiv" class="menu grid gap-6 sm:grid-cols-1 md:grid-cols-4 xl:px-20">
+          
+          
+        
+        </div>
+      </div>
+  </section>
+
+  <section class="hidden" id="area">
+    <div class="container my-10 w-[80%]  ps-[20%] md:ps-[10%]">
+        <div id="areaDiv" class="text-white menu grid gap-6 sm:grid-cols-1 md:grid-cols-4 xl:px-20">
+          
+        </div>
+      </div>
+  </section>
+
+  <section class="hidden" id="ing">
+    <div class="container my-10 w-[80%]  ps-[20%] md:ps-[10%]">
+        <div id="ingDiv" class="text-white menu grid gap-6 sm:grid-cols-1 md:grid-cols-4 xl:px-20">
+          
+        </div>
+      </div>
+  </section>
+
+
+  <section class="hidden mt-[10%]" id="contact">
+    <div class="container w-[80%] text-center  ps-[20%] md:ps-[10%]">
+      <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-6">
+        <input type="text" class="bg-white px-3 py-2 rounded-md focus:outline-4 focus:outline-sky-500/20 focus:border-sky-300" placeholder="Enter Your Name">
+        <input type="text" class="bg-white px-3 py-2 rounded-md focus:outline-4 focus:outline-sky-500/20 focus:border-sky-300" placeholder="Enter Your Name">
+        <input type="text" class="bg-white px-3 py-2 rounded-md focus:outline-4 focus:outline-sky-500/20 focus:border-sky-300" placeholder="Enter Your Name">
+        <input type="text" class="bg-white px-3 py-2 rounded-md focus:outline-4 focus:outline-sky-500/20 focus:border-sky-300" placeholder="Enter Your Name">
+        <input type="text" class="bg-white px-3 py-2 rounded-md focus:outline-4 focus:outline-sky-500/20 focus:border-sky-300" placeholder="Enter Your Name">
+        <input type="text" class="bg-white px-3 py-2 rounded-md focus:outline-4 focus:outline-sky-500/20 focus:border-sky-300" placeholder="Enter Your Name">
+      </div>
+      <button class="mt-4 border-red-800 border-[1px] p-2 text-red-800 rounded-md">Submit</button>
+    </div>
+  </section>
+
+  
+
+
+
+
+
+
+  <section id="mealPage" class="hidden text-white">
+    <div class="container py-15 px-28 w-[80%]  ps-[20%] md:ps-[10%]">
+      <div class="grid gap-5 sm:grid-cols-1 md:grid-cols-[30%_minmax(0,1fr)]">
+        <div>
+          <img id="mealImg" src="images/meal.jpg" class="rounded-lg" alt="meal">
+          <h2 id="mealTitleImg" class="font-medium text-3xl">Migas</h2>
+        </div>
+      
+        <div>
+          <h3 class="font-medium text-3xl mb-2">Instructions</h3>
+          <p id="pInst" class="mb-3">Fry the finely chopped onions and minced meat in oil. Add the salt and pepper. Grease a round baking tray and put a layer of pastry in it. Cover with a thin layer of filling and cover this with another layer of filo pastry which must be well coated in oil. Put another layer of filling and cover with pastry. When you have five or six layers, cover with filo pastry, bake at 200ºC/392ºF for half an hour and cut in quarters and serve.</p>
+          <h3 class="font-bold text-3xl mb-2">Area : <span id="areaSpan" class="font-medium text-2xl">Croatian</span></h3>
+          <h3 class="font-bold text-3xl mb-2">Category : <span id="catSpan" class="font-medium text-2xl">Side</span></h3>
+          <h4 class="font-medium text-3xl">Recipes :</h4>
+          <ul id="recList" class="flex gap-y-4 gap-x-4 flex-wrap my-4 ms-2">
+            
+          </ul >
+          <h4 class="font-medium text-3xl mt-6">Tags :</h4>
+          <ul id="tagList" class=" flex gap-y-4 gap-x-4 flex-wrap my-4 ms-2">
+          </ul>
+          <button class="bg-[#198754] hover:bg-[#157347] hover:duration-200 text-white rounded-md py-2 px-3 mt-2"><a id="srcBtn" target="_blank" href="#">Source</a></button>
+          <button  class="bg-[#dc3545] hover:bg-[#bb2d3b] hover:duration-200 text-white rounded-md py-2 px-3 mt-2"><a id="ytbBtn" target="_blank" href="#">Youtube</a></button>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <script src="./src/js/jquery-3.7.1.min.js"></script>
+  <script src="./src/js/index.js"></script>
+</body>
+</html>

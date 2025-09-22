@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.13"
+  },
+  "name": "tailwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "tailwindcss": "^4.1.13"
+  },
+  "scripts": {
+    "start": "npx @tailwindcss/cli -i ./src/css/input.css -o ./src/css/output.css -w",
+    "build": "npx @tailwindcss/cli -i ./src/css/input.css -o ./src/css/output.css -m"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
